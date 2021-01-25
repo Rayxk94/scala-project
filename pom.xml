@@ -21,6 +21,7 @@
         <mysql.version>5.1.48</mysql.version>
         <zookeeper.version>3.4.5-cdh5.16.2</zookeeper.version>
         <curator.version>4.2.0</curator.version>
+        <scala.version>2.12.10</scala.version>
     </properties>
 
     <repositories>
@@ -44,6 +45,11 @@
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
                 <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.scala-lang</groupId>
+                <artifactId>scala-library</artifactId>
+                <version>${scala.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
