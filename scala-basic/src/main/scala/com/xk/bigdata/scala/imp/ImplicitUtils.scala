@@ -4,5 +4,5 @@ import com.xk.bigdata.scala.imp.ImplicitClass.{Person, SuperPerson}
 
 object ImplicitUtils {
 
-  implicit def person2SuperPerson(person: Person): SuperPerson = new SuperPerson(person.name)
+//  implicit def person2SuperPerson(person: Person): SuperPerson = new SuperPerson(person.name)
 }

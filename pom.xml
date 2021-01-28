@@ -22,6 +22,8 @@
         <zookeeper.version>3.4.5-cdh5.16.2</zookeeper.version>
         <curator.version>4.2.0</curator.version>
         <scala.version>2.12.10</scala.version>
+        <scalikejdbc.version>3.4.0</scalikejdbc.version>
+        <scala.tools.version>2.12</scala.tools.version>
     </properties>
 
     <repositories>
@@ -50,6 +52,21 @@
                 <groupId>org.scala-lang</groupId>
                 <artifactId>scala-library</artifactId>
                 <version>${scala.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.scalikejdbc</groupId>
+                <artifactId>scalikejdbc_${scala.tools.version}</artifactId>
+                <version>${scalikejdbc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.scalikejdbc</groupId>
+                <artifactId>scalikejdbc-config_${scala.tools.version}</artifactId>
+                <version>${scalikejdbc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
